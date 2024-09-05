@@ -1,0 +1,34 @@
+\documentclass{report}
+
+\input{preamble.tex}
+
+\renewcommand{\contentsname}{Problem Sets}
+\renewcommand{\chaptername}{Problem Set}
+
+\title{5.47 (Tutorial in Organic Chemistry) Notes}
+\author{Steven Labalme}
+
+\begin{document}
+
+
+
+
+\maketitle
+
+
+
+\pagenumbering{roman}
+\tableofcontents
+\newpage
+
+
+
+\pagenumbering{arabic}
+\pagestyle{main}
+\renewcommand{\chaptermark}[1]{\markboth{\chaptername\ \thechapter\ (#1)}{}}
+\subfile{PSet1/pset1.tex}
+
+
+
+
+\end{document}
