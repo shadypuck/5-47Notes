@@ -3,7 +3,10 @@
 \usepackage{fancyhdr}
 \usepackage{marginnote}
 \usepackage{enumitem}
+\usepackage{scrextend}
+\usepackage[bottom]{footmisc}
 \usepackage{siunitx}
+\usepackage[style=apa]{biblatex}
 \usepackage{tikz,graphicx,pdfpages}
 \usepackage{float,subcaption}
 \usepackage{amsmath,amssymb}
@@ -33,8 +36,14 @@
     \fill (1.2,0) -- (0,-1) -- (3.5,0);
 }}}
 
+\deffootnotemark{\textsuperscript{\textup{[}\thefootnotemark\textup{]}}}
+\deffootnote[2.1em]{0em}{0em}{\textsuperscript{\thefootnote}}
+
 \sisetup{per-mode=symbol}
 \DeclareSIUnit{\calorie}{cal}
+
+\addbibresource{\subfix{main.bib}}
+\DefineBibliographyStrings{english}{bibliography={References}}
 
 \usetikzlibrary{decorations.pathmorphing}
 \tikzset{
