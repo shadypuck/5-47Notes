@@ -224,5 +224,203 @@
 
 
 
+\section{Problems 9 and 10}
+\begin{itemize}
+    \item \marginnote{9/23:}PSet 2, Q1: Great place to use molecular model kits.
+    \item We now begin discussing Problem 10.
+    \begin{figure}[h!]
+        \centering
+        \includegraphics[width=0.35\linewidth]{WPSet1Q10.png}
+        \caption{Wendlandt PSet 1, Q10.}
+        \label{fig:WPSet1Q10}
+    \end{figure}
+    \item The final product molecule is called a \textbf{propellane} (or something like that; like a propeller).
+    \item The first step is reversible.
+    \begin{itemize}
+        \item Alison asks about the $\pKa$ of a protonated carbonyl again.
+    \end{itemize}
+    \item What would be a good acid to use?
+    \begin{itemize}
+        \item An acid stronger than the $\pKa$ of a protonated carbonyl would be great, but we don't have many of them.
+        \begin{itemize}
+            \item Perhaps \ce{TsOH}??
+        \end{itemize}
+        \item $\pKa=-\log\Ka$.
+        \begin{itemize}
+            \item Recall also $\Delta G=-RT\ln\Keq\approx-1.4\log\Keq$.
+        \end{itemize}
+        \item Note that for a kinetically efficient process, we might not need much acid at all!
+    \end{itemize}
+    \item Alison has Christina draw an energy diagram again.
+    \item An analysis of which steps are reversible: The ones with small differences in ring strain.
+    \begin{itemize}
+        \item So the product-selective steps are a bit tricky to figure out.
+    \end{itemize}
+    \item The resonance-stabilized carbocation is ?? times more stable than the tertiary carbocation, which is inductively stabilized via hyperconjugation.
+    \begin{itemize}
+        \item Alison has Christina draw an MO picture of hyperconjugation.
+        \item \textbf{Mayr electrophilicity scale}.
+    \end{itemize}
+    \item Procedure for this problem.
+    \begin{itemize}
+        \item Get all the connections right.
+        \item Think about the energy surface we're operating on (thermoneutral, downhill, uphill).
+        \item This should give us reversibility/irreversibility.
+    \end{itemize}
+    \item Steven: It's easier to migrate a bond through-bond than through space.
+    \begin{itemize}
+        \item We never have a pure, unfilled $p$-orbital.
+        \item Rather, we always have the "partial double bond" that is hyperconjugation.
+        \item The carbocation changes the behavior of the entire molecule, leaning bonds in.
+        \item This becomes a transition state structure for the hydride shift!
+        \item TS is a 3c-2e transition state structure. This is a \textbf{nonclassical} carbocation that's much more realistic; we'll see this in 5.53. Indeed, we should \emph{not} think of carbocations as localized but very much as delocalized regions of positive charge in the local chemical environment.
+        \item "In the right molecule, anything can happen." But through-space stabilization of a carbocation is much harder.
+    \end{itemize}
+    \item Steven: Is there a such thing as a hydroxide shift?
+    \begin{itemize}
+        \item We can't really do that in one step\dots but we can do it through an epoxide formation and subsequent ring opening!
+    \end{itemize}
+    \item David: Is there a preference for a hydride shift or a methyl shift?
+    \begin{itemize}
+        \item In both cases, we'll make the same tertiary carbocation.
+        \item We need to think about both sterics and electronics.
+        \item Electronically, \ce{C-C} bonds are more electron-rich.
+        \begin{itemize}
+            \item But a methyl group is also bulkier.
+        \end{itemize}
+        \item Thus, all else being equal (as in the example), both shifts are reasonable.
+    \end{itemize}
+    \item This reaction is 95\% yield due to the thermodynamic driving force, but a lot of energy went into making the initial high-energy structure.
+    \item Terpene cyclizations are very hard to do without enzymes, because we have a big endergonic step to start and then lots of little downhill steps.
+    \item Frank: With respect to the acid, ...
+    \begin{itemize}
+        \item Cross-coupling pre-Buchwald ligands buys you out of a low-energy, pre-equilibrium state.
+    \end{itemize}
+    \item Altogether, the full solution to PSet 1, Q10 is on the next page.
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\linewidth]{WPSet1Q10S.JPG}
+        \caption{Wendlandt PSet 1, Q10 solution.}
+        \label{fig:WPSet1Q10S}
+    \end{figure}
+    \pagebreak
+    \item We now begin discussing Problem 9.
+    \begin{figure}[h!]
+        \centering
+        \includegraphics[width=0.65\linewidth]{WPSet1Q9.png}
+        \caption{Wendlandt PSet 1, Q9.}
+        \label{fig:WPSet1Q9}
+    \end{figure}
+    \item First step is deprotection: We lose TBS before we'll lose TIPS. Here's why.
+    \item Consider some common protecting groups: \textbf{TMS}, \textbf{TES}, \textbf{TBS}, \textbf{TIPS}, and \textbf{TBDPS}.
+    \begin{figure}[h!]
+        \centering
+        \footnotesize
+        \begin{subfigure}[b]{0.17\linewidth}
+            \centering
+            \chemfig{Si(-[:150])(<[2])(<:[:30])-[6]!{wave}}
+            \caption{TMS.}
+            \label{fig:silylPGa}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.17\linewidth}
+            \centering
+            \chemfig{Si(-[:150]-[::60])(<[2]-[::60])(<:[:30]-[::-60])-[6]!{wave}}
+            \caption{TES.}
+            \label{fig:silylPGb}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.17\linewidth}
+            \centering
+            \chemfig{Si(-[:150])(<[2](-[::60])(<[::0])(<:[::-60]))(<:[:30])-[6]!{wave}}
+            \caption{TBS.}
+            \label{fig:silylPGc}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.17\linewidth}
+            \centering
+            \chemfig{Si(-[:150](-[::60])(-[::-60]))(<[2](-[::60])(-[::-60]))(<:[:30](-[::60])(-[::-60]))-[6]!{wave}}
+            \caption{TIPS.}
+            \label{fig:silylPGd}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.17\linewidth}
+            \centering
+            \chemfig{Si(-[:150]Ph)(<[2](-[::60])(<[::0])(<:[::-60]))(<:[:30]Ph)-[6]!{wave}}
+            \caption{TBDPS.}
+            \label{fig:silylPGe}
+        \end{subfigure}
+        \caption{Silyl protecting groups.}
+        \label{fig:silylPG}
+    \end{figure}
+    \item \textbf{Trimethylsilane}. \emph{Denoted by} \textbf{TMS}. \emph{Given by} Figure \ref{fig:silylPGa}.
+    \item \textbf{Triethylsilane}. \emph{Denoted by} \textbf{TES}. \emph{Given by} Figure \ref{fig:silylPGb}.
+    \item \textbf{\textsuperscript{\emph{t}}Butyldimethylsilane}. \emph{Denoted by} \textbf{TBS}. \emph{Given by} Figure \ref{fig:silylPGc}.
+    \item \textbf{Triisopropylsilane}. \emph{Denoted by} \textbf{TIPS}. \emph{Given by} Figure \ref{fig:silylPGd}.
+    \item \textbf{\textsuperscript{\emph{t}}Butyldiphenylsilane}. \emph{Denoted by} \textbf{TBDPS}. \emph{Given by} Figure \ref{fig:silylPGe}.
+    \item Relative stability against hydrolysis in acidic media.
+    \begin{itemize}
+        \item $\text{TMS}:\text{TES}:\text{TBS}:\text{TIPS}:\text{TBDPS}$ is $1:64:\num{2000}:\num{700000}:\num{5000000}$.
+    \end{itemize}
+    \item TBDPS was developed for carbohydrate chemistry, because they needed something that wouldn't fall off!
+    \item We get to the product as expected.
+    \item Now let's rationalize the ratio.
+    \begin{itemize}
+        \item The second product is doubly anomeric.
+        \item Substituents want to be equatorial, as well.
+        \item With axial OPMB, two H's point right at each other. And they are locked into space this way due to the \emph{spiro}-ketal.
+        \item We also have to consider solvent effects.
+        \begin{itemize}
+            \item \ce{CHCl3} has a relatively high \textbf{dielectric} ($\sim 4$), and hence is relatively nonpolar.
+            \item Look up the \textbf{dielectric effect} in chemistry!!
+        \end{itemize}
+        \item Solvent dipole and molecular dipole matters in PSet 2, Q1, too!
+    \end{itemize}
+    \item Indeed, chloroform is a polar molecule but a nonpolar \emph{solvent} because it is not miscible with water and has a low dielectric constant. However, it is polar compared to many other organic solvents!
+    \item Sterics only becomes a problem when things are "literally right on top of each other."
+    \emph{picture; \ce{H2} PE surface}.
+    \begin{itemize}
+        \item Bond angles matter more in most molecules!
+        \item You get a lot more out of bringing things close together until you \emph{really} pay.
+        \item Takeaway: Bringing two things together is very often stabilizing (dipolar/quadripolar interactions, LDFs, etc.). We generally get this wrong.
+    \end{itemize}
+    \item Altogether, the full solution to PSet 1, Q9 is on the next page.
+    \begin{figure}[h!]
+        \centering
+        \includegraphics[width=0.8\linewidth]{WPSet1Q9S.JPG}
+        \caption{Wendlandt PSet 1, Q9 solution.}
+        \label{fig:WPSet1Q9S}
+    \end{figure}
+    \pagebreak
+    \item We now pick up last time's discussion on nitrenes, from Problem 3 (Figure \ref{fig:WPSet1Q3}).
+    \item \textbf{Povarov reaction}.
+    \item Think about arrow pushing in terms of which electrons are moving from which orbital to which other orbital.
+    \begin{itemize}
+        \item In the rearrangement step, electrons leave from the \ce{Ar-C} bond and go into the nitrogen's empty, positively charged $p$-orbital.
+        \begin{itemize}
+            \item They don't go into the \ce{N-H} $\sigma^*$ orbital because that kind of S\textsubscript{N}2 attack would kick out \ce{H-}.
+            \item There's also another option we can rule out.
+        \end{itemize}
+        \item Then electrons leave from the nitrogen lone pair and move into a new $\pi$-bond.
+    \end{itemize}
+    \item Why does the aryl group migrate instead of the methyl group?
+    \begin{itemize}
+        \item Because it forms a resonance-stabilied carbocation??
+        \item Specifically, we get a \textbf{phenonium ion} that stabilizes the positive charge through delocalization.
+    \end{itemize}
+    \item Alison "numbers the shit" out of structures she's working on; there's no shame in it.
+    \item Jasmin \emph{really} can't think on her feet.
+    \item $[4+2]$ cycloaddition in the end.
+    \item Aside: Suffixes.
+    \begin{itemize}
+        \item Three examples.
+        \begin{itemize}
+            \item -ium: Cation.
+            \item -yl: Radical.
+            \item -ide: Anion.
+        \end{itemize}
+        \item So "phenyl" technically means the phenyl radial.
+        \item This also explains the difference between "hydroxyl" and "hydroxide"
+    \end{itemize}
+\end{itemize}
+
+
+
 
 \end{document}
