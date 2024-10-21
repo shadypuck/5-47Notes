@@ -2,7 +2,6 @@
 
 \pagestyle{main}
 \renewcommand{\chaptermark}[1]{\markboth{\chaptername\ \thechapter\ (#1)}{}}
-\setcounter{chapter}{2}
 
 \begin{document}
 
@@ -418,6 +417,63 @@
         \item So "phenyl" technically means the phenyl radial.
         \item This also explains the difference between "hydroxyl" and "hydroxide"
     \end{itemize}
+\end{itemize}
+
+
+
+\section{Problem 2}
+\begin{itemize}
+    \item \marginnote{9/25:}Starting with Jasmin's azide one again.
+    \item Normal vs. \textbf{inverse electron-demand Diels-Alder}.
+    \begin{itemize}
+        \item This reaction is an inverse electron-demand Diels-Alder because the HOMO of the diene is so stabilized that the electrons from the dienophile HOMO will donate into the LUMO of the diene.
+        \item The diene HOMO is dropped so much because of the electron withdrawing nitrogen in the conjugated system.
+        \item The dienophile is electron rich because it's styrene, and that's pretty electron rich.
+    \end{itemize}
+    \item A concerted Diels-Alder would break aromaticity, and you'd have steric clash to the desired product, so perhaps that's disfavored. Though, I think Alison's DA stereochemistry might be backwards...
+    \item \textbf{Twist-boat} (transition state diagram): ??
+    \item DA regiochemistry is defined by the \textbf{orbital coefficient}, i.e., the $\delta^+$ and $\delta^-$.
+    \item To a first approximation, a reasonably stable cation followed by a Friedel-Crafts type end to aromaticity is probably more defensible than a DA that breaks aromaticity.
+    \item We now begin discussing Problem 2.
+    \begin{figure}[h!]
+        \centering
+        \includegraphics[width=0.75\linewidth]{WPSet1Q2.png}
+        \caption{Wendlandt PSet 1, Q2.}
+        \label{fig:WPSet1Q2}
+    \end{figure}
+    \item First step: The hydrogenation.
+    \begin{itemize}
+        \item It's not that you have insufficient kinetic access to reduce the product; it's that you have a very deactivated pyridinium, and the product is actually more stable since it's so highly conjugated.
+        \item The pyridinium is \textbf{cross-conjugated}, as well.
+        \item We'll also have transesterification.
+    \end{itemize}
+    \item The product is a racemate, so we can track stereochemistry through the mechanism but assign it arbitrarily. In other words, just be consistent, and then understand that the product will contain both enantiomers.
+    \item Bromonium ion is broken by the lone pair from the nearby nitrogen. Then water adds in to form the hemiaminal.
+    \item Hydrolysis of the hemiaminal yields the aldehyde.
+    \item Then an S\textsubscript{N}2 or S\textsubscript{N}1 attack can close the 5-membered ring.
+    \begin{itemize}
+        \item Alternatively, consider an intramolecular, through-bond \ce{C-N} migration.
+        \item Leaving groups $\alpha$ to carbonyl groups are exceptionally good electrophiles for S\textsubscript{N}2.
+        \begin{itemize}
+            \item We can rationalize this via orbitals.
+            \item One idea: Donation from the \ce{C=O} $\pi$-orbital to the \ce{C-Br} $\sigma^*$ orbital weakens that bond.
+            \item Another idea: Consider the transition state. The \textbf{A value} of methyl, ethyl, and isopropyl are all quite similar. Bromine is much smaller (0.83) vs. ester (1.73), so this 1 kcal difference in free energy gives us a $10:1$ preference for equatorial ester. The reaction can only go with equatorial bromine, though.
+            \item \textbf{Curtin-Hammett kinetic scenario}.
+        \end{itemize}
+    \end{itemize}
+    \item \textbf{A value}: An empirical measure of how much a substituent on a cyclohexane likes to be axial or equatorial.
+    \begin{itemize}
+        \item Essentially, this is a net measure of a whole bunch of different effects that cause the free energy difference between the two ring conformers.
+    \end{itemize}
+    \item Altogether, the full solution to PSet 1, Q2 is on the next page.
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\linewidth]{WPSet1Q2S.JPG}
+        \caption{Wendlandt PSet 1, Q2 solution.}
+        \label{fig:WPSet1Q2S}
+    \end{figure}
+    \pagebreak
+    \item Alison's PSets are way more open-ended than Mo's because she doesn't like arrow-pushing mechanisms.
 \end{itemize}
 
 
